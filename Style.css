@@ -8,11 +8,12 @@
 }
 :root{
    
-    --clr-prim: #3E92CC;
-    --clr-secondary: #1E1B18;
-    --clr-petal-one: #D8315B;
-    --clr-petal-tow: #FFFAFF;
+    --clr-prim: #7209B7;
+    --clr-secondary: #4361EE;
+    --clr-petal-one: #F72585;
+    --clr-petal-tow: #3A0CA3;
     --clr-petal-center: #0A2463;
+    --clr-lightcolor:#DDD8B8;
 
     /* Table color */
     --clr-yallow:#FEE440;
@@ -37,24 +38,27 @@
 
 .head{ 
     background-color: var(--clr-prim);
-    margin: 10px;
-    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
 }
 .title{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: var(--clr-petal-tow);
-    width: 30%;
+    
+    background-color: var(--clr-prim);
+    text-align: center;
+    padding-top: 2em;
+    border-radius: 10px;
 }
-.logo{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    background-color: var(--clr-petal-tow);
 
+.logo{ 
+    text-align: end;
+    padding: 6px;
+}
+
+.logo > img{
+   max-width: 60px;
+   background-color: var(--clr-lightcolor);
+   border-radius: 5px;
+   
 }
 
 
@@ -64,6 +68,9 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-image: url(img/background-gfb17593b3_1920.jpg);
+    background-size: cover;
+
     
 }
 
@@ -115,32 +122,118 @@
     top: 215px;
     left:100px;
 }
+
+/* flower center styling */
+
 .center{
+    position: relative;
     text-align: center;
     font-size: 14px;
-    width: 120px;
-    height: 120px;
+    width: 175px;
+    height: 175px;
     border: 1px solid var(--clr-petal-tow);
     background-color: var(--clr-petal-center);
     color: var(--clr-petal-tow);
-    border-radius: 50px;
+    border-radius: 85px;
     opacity: 0,5;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 130px;
-    left:200px;
+    top: 120px;
+    left:180px;
    
 }
+.center > p {
+    color: var(--clr-lightcolor);
+    position: absolute;
+    top: 40px;
+}
+
+.img01{
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+ }
+ .img02{
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 70px;
+    transform: rotate(-15deg);
+ }
+.img019{
+    width: 100px;
+    position: absolute;
+    bottom: -8px;
+    right: 20px;
+}
+.img020{
+    width: 80px;
+    position: absolute;
+    left: -35px;
+}
+
+.img009{
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 20px;
+}
+.img010{
+    width: 100px;
+    position: absolute;
+    right: -70px;
+    top: -110px;
+}
+.img011{
+    width: 50px;
+    position: absolute;
+    left: 170px;
+    bottom: 30px;
+}
+.img012{
+    width: 50px;
+    position: absolute;
+    left: -20px;
+    bottom:220px;
+    transform: rotate(15deg);
+}
+.img013{
+    width: 50px;
+    position: absolute;
+    left: -20px;
+    bottom: 40px;
+}
+.img014{
+    width: 50px;
+    position: absolute;
+    right: -10px;
+    top: 50px;
+    transform: rotate(15deg);
+}
+.img003{
+    width: 75px;
+    position: absolute;
+    left: -70px;
+    bottom: 200px;
+}
+.img004{
+    width: 75px;
+    position: absolute;
+    left: 200px;
+    transform: rotate(-15deg);
+}
+
 .a-petal{
     letter-spacing: 0,1em;
     transition: 0,5s;
     text-decoration: none;
-    color:black;
+    color:var(--clr-lightcolor);
+    font-size: 18px;
 } 
 .a-petal .petal:hover{
-    color: var(--clr-petal-tow);
+    color:#fff;
     font-size: 1em;
     font-weight: 400;
     -moz-box-shadow: -5px -5px var(--clr-petal-center);
@@ -156,14 +249,26 @@ footer{
 .foot{
     position: absolute;
     right: 10px;
-    background-color: var(--clr-petal-tow);
+    background-color: var(--clr-prim);
+    color: var(--clr-lightcolor);
     width: 400px;
     height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: var(--clr-lightcolor) solid 2px;
+    padding: 1em;
+ 
     
 }
+.foot-title:{
+    text-align: center;
+    color: var(--clr-lightcolor);
+    padding: 1em;
+}
+
+.foot-list{
+    color: var(--clr-lightcolor);
+    padding: 1em;
+}
+
 .steps{
   width: 200px;
 }
