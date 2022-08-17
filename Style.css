@@ -8,7 +8,7 @@
 }
 :root{
    
-    --clr-prim: #7209B7;
+    --clr-prim: #d5c0e2;
     --clr-secondary: #4361EE;
     --clr-petal-one: #F72585;
     --clr-petal-tow: #3A0CA3;
@@ -32,26 +32,31 @@
 }
 /* This is the home page styling */
 .index{
-    background-color: var(--clr-prim);
+    background-image: url(img/image015.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
 .head{ 
-    background-color: var(--clr-prim);
+    background: transparent;
     display: grid;
     grid-template-columns: 5fr 1fr;
+    margin: 1em;
 }
 .title{
-    
-    background-color: var(--clr-prim);
+    background-color: #fff;
     text-align: center;
     padding-top: 2em;
-    border-radius: 10px;
+    border-radius: 2px;
+    padding-left: 5em;
 }
 
 .logo{ 
     text-align: end;
     padding: 6px;
+    background: linear-gradient(90deg, #fff, #ddd8b8);
 }
 
 .logo > img{
@@ -68,9 +73,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-image: url(img/background-gfb17593b3_1920.jpg);
-    background-size: cover;
-
+    
     
 }
 
@@ -213,16 +216,47 @@
     transform: rotate(15deg);
 }
 .img003{
-    width: 75px;
+    width: 105px;
     position: absolute;
-    left: -70px;
-    bottom: 200px;
+    left: -170px;
+    bottom: 190px;
 }
 .img004{
     width: 75px;
     position: absolute;
     left: 200px;
     transform: rotate(-15deg);
+}
+.img05{
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 50px
+}
+.img018{
+    width: 150px;
+    position: absolute;
+    top: 170px;
+    right: 440px;
+}
+.steps02{
+    width: 175px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 400px;
+}
+
+.img017{
+    width: 150px;
+    position: absolute;
+    bottom: 40px;
+    right: -70px;
+}
+.steps03{
+    position: absolute;
+    width: 200px;
+    bottom: 50px;
+    right: 500px;
 }
 
 .a-petal{
@@ -250,7 +284,7 @@ footer{
     position: absolute;
     right: 10px;
     background-color: var(--clr-prim);
-    color: var(--clr-lightcolor);
+    color: var(--clr-petal-center);
     width: 400px;
     height: 200px;
     border: var(--clr-lightcolor) solid 2px;
@@ -258,15 +292,16 @@ footer{
  
     
 }
-.foot-title:{
+
+.foot-title {
     text-align: center;
-    color: var(--clr-lightcolor);
+    color: var(--clr-petal-center);
     padding: 1em;
 }
 
 .foot-list{
-    color: var(--clr-lightcolor);
-    padding: 1em;
+    color: var(--clr-petal-center);
+    padding: .25em;
 }
 
 .steps{
